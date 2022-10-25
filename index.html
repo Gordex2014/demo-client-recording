@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+  </head>
+  <body>
+    <h1 class="title">Camera and audio</h1>
+
+    <div id="videos">
+      <video class="video-player" id="source" autoplay playsinline></video>
+      <video class="video-player" id="recorded" autoplay playsinline></video>
+    </div>
+
+    <div class="buttons__container">
+      <button class="button buttons--start-camera">Start camera</button>
+      <button class="button buttons--start-record" disabled>
+        Start Recording
+      </button>
+      <button class="button buttons--play" disabled>Play</button>
+      <button class="button buttons--download" disabled>Download</button>
+    </div>
+
+    <div>
+      <span class="error-message"></span>
+    </div>
+  </body>
+  <script type="module" src="/src/main.ts"></script>
+</html>
